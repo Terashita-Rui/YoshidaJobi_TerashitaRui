@@ -1,0 +1,8 @@
+﻿  player.cpp
+  game.cpp
+c:\users\student\desktop\作品集\alien hunter2\game.cpp(118): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+c:\users\student\desktop\作品集\alien hunter2\game.cpp(119): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+c:\users\student\desktop\作品集\alien hunter2\game.cpp(120): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+  コードを生成中...
+  ポリゴン.vcxproj -> C:\Users\student\Desktop\作品集\ALIEN Hunter2\Debug\ポリゴン.exe
+  ポリゴン.vcxproj -> C:\Users\student\Desktop\作品集\ALIEN Hunter2\Debug\ポリゴン.pdb (Full PDB)
