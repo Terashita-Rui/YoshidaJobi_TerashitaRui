@@ -194,13 +194,25 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -211,13 +223,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11272}
     - Class: 114
+      Script: {instanceID: 11338}
+    - Class: 114
+      Script: {instanceID: 11382}
+    - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
       Script: {instanceID: 11456}
     - Class: 114
+      Script: {instanceID: 11546}
+    - Class: 114
       Script: {instanceID: 11634}
     - Class: 114
+      Script: {instanceID: 11784}
+    - Class: 114
       Script: {instanceID: 11850}
+    - Class: 114
+      Script: {instanceID: 11878}
     - Class: 114
       Script: {instanceID: 11972}
     - Class: 114
@@ -229,11 +251,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12294}
     - Class: 114
+      Script: {instanceID: 12296}
+    - Class: 114
+      Script: {instanceID: 12334}
+    - Class: 114
       Script: {instanceID: 12732}
     - Class: 114
       Script: {instanceID: 12788}
     - Class: 114
+      Script: {instanceID: 12818}
+    - Class: 114
+      Script: {instanceID: 12948}
+    - Class: 114
       Script: {instanceID: 12982}
+    - Class: 114
+      Script: {instanceID: 13006}
     - Class: 114
       Script: {instanceID: 13030}
     - Class: 114
@@ -242,7 +274,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 195
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
@@ -1188,4 +1226,4 @@ ScriptsOnlyBuild:
   - Assets/main/Scenes/stage/stage02/stage02.unity
   - Assets/main/Scenes/stage/stage03/stage03.unity
   - Assets/main/Scenes/stage/stage04/stage04.unity
-  playerPath: "C:/Users/student/Desktop/test/\u5E83\u544A\u3067\u3088\u304F\u898B\u308B\u30A2\u30EC.exe"
+  playerPath: "C:/Users/student/Desktop/GitHub/\u5409\u7530\u5B66\u5712\u60C5\u5831\u30D3\u30B8\u30CD\u30B9\u5C02\u9580\u5B66\u6821_\u5BFA\u4E0B\u7409\u751F/\u3010Unity\u3011\u5E83\u544A\u3067\u3088\u304F\u898B\u308B\u30A2\u30EC\u2460/\u5E83\u544A\u3067\u3088\u304F\u898B\u308B\u30A2\u30EC.exe"

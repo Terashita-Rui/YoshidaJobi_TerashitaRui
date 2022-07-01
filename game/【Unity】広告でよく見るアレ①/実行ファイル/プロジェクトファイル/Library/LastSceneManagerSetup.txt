@@ -1,0 +1,25 @@
+sceneSetups:
+- path: Assets/main/Scenes/Title.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/main/Scenes/Menu.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/main/Scenes/stage/stage01/stage01.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/main/Scenes/stage/stage02/stage02.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/main/Scenes/stage/stage03/stage03.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/main/Scenes/stage/stage04/stage04.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
