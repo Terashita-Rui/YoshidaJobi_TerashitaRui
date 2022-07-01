@@ -1,0 +1,44 @@
+☆広告でよく見るアレ
+　〇Customizable Skybox(アセットストア)
+　　・マテリアル
+　　　・Day1
+　　　・Day3
+　　　・Dat5
+　　　・Day7
+　　　・Morninq2
+　　　・Sunset5
+
+
+☆Unityちゃん3Dアクション
+　〇Standard Assets(アセットストア)
+　　・アニメーターコントローラー
+　　　・ThirdPersonAnimatorController
+　　・プレハブ
+　　　・FloorPrototype64x01x64
+　　　・Directional light for UnityChan
+　　　・MultipurposeCameraRig
+　　・スクリプト
+　　　・ThirdPersonCharacter
+　　　・ThirdPersonUserControl
+　　　
+　〇Unity-chan!(アセットストア)
+　　・プレハブ
+　　　・unitychan
+　　・スクリプト
+　　　・AutoBlink
+
+
+☆塊魂もどき
+　〇モデル
+　　・サイコロ(Booth)
+　　・りんご(Booth)
+　　・カラーコーン(Booth)
+　　・モニター(Booth)
+　　・【無料3Dモデル】インテリア用 黒板(Booth)(Unity package file)
+　　・愛(Booth)
+　　・にんじん Carrot(Booth)
+　〇Customizable Skybox(アセットストア)
+　　・マテリアル
+　　　・Day1
+　　　・Day3
+　　　・Day7
