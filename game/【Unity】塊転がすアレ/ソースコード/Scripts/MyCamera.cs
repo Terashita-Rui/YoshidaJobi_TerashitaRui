@@ -94,11 +94,11 @@ public class MyCamera : MonoBehaviour
             transform.eulerAngles.z
         );
 
-        if(playerScript.IsAboutPlayerDiameter == true)
+        if(playerScript.IsAboutPlayerScale == true)
         {
            IsCameraDistance = true;
 
-           playerScript.IsAboutPlayerDiameter = false;
+           playerScript.IsAboutPlayerScale = false;
         }
     }
 }

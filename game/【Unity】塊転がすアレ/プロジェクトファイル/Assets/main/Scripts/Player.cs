@@ -24,10 +24,10 @@ public class Player : MonoBehaviour
     [SerializeField]
     private ParticleSystem dashEffect;
 
-    //PlayerDiameterオブジェクト
-    private GameObject playerDiameterObj;
-    //PlayerDiameterスクリプト
-    private PlayerDiameter playerDiameterScript;
+    //PlayerScaleオブジェクト
+    private GameObject playerScaleObj;
+    //PlayerScaleスクリプト
+    private PlayerScale playerScaleScript;
     //GameManagerオブジェクト
     private GameObject gamaManagerObj;
     //GameManagerスクリプト
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
     //DashCTが終わっているか
     private bool IsDashCT = false;
     //現在の直径
-    private float currentDiameter;
+    private float currentScale;
     //現在のPlayrChildNum
     private int currentChildNum;
     //PlayerChildNumが増えた回数
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
     public Item moveItemScript;
     //Playerが一定以上大きくなったか
     [System.NonSerialized]
-    public bool IsAboutPlayerDiameter;
+    public bool IsAboutPlayerScale;
     //Dashを使えるか
     [System.NonSerialized]
     public bool IsPossibleDash = false;
@@ -90,15 +90,15 @@ public class Player : MonoBehaviour
     {
         //各要素を参照したり入れたりする
 
-        playerDiameterObj = GameObject.Find("PlayerDiameter");
-        playerDiameterScript = playerDiameterObj.GetComponent<PlayerDiameter>();
+        playerScaleObj = GameObject.Find("PlayerScale");
+        playerScaleScript = playerScaleObj.GetComponent<PlayerScale>();
         gamaManagerObj = GameObject.Find("GameManager");
         gameManagerScript = gamaManagerObj.GetComponent<GameManager>();
         rigidBody = this.GetComponent<Rigidbody>();
         sphereCollider = this.transform.GetComponent<SphereCollider>();
         saveGravity = gravity;
 
-        currentDiameter = playerDiameterScript.currentDimeter;
+        currentScale = playerScaleScript.currentScale;
 
         //他のシーンに行っても破棄されなくする
         DontDestroyOnLoad(this.gameObject);
@@ -198,7 +198,7 @@ public class Player : MonoBehaviour
             }
 
             //Playerの子要素の要素を消していいか
-            if (playerDiameterScript.IsDestroy == true)
+            if (playerScaleScript.IsDestroy == true)
             {
                 //消えないと困るから念のため子要素の数だけ回す
                 for (int nCount = 0; nCount < playerChildNum; nCount++)
@@ -211,19 +211,19 @@ public class Player : MonoBehaviour
                     }
                 }
 
-                playerDiameterScript.IsDestroy = false;
+                playerScaleScript.IsDestroy = false;
             }
 
             //プレイヤーの子が10回増えたら
             if (addChildNumCount >= 10)
             {
-                IsAboutPlayerDiameter = true;
+                IsAboutPlayerScale = true;
 
-                //大きくなった直径と現在の直径を合わせる
-                currentDiameter = playerDiameterScript.currentDimeter;
+                //現在の大きさ合わせる
+                currentScale = playerScaleScript.currentScale;
             }
 
-            if (IsAboutPlayerDiameter == true)
+            if (IsAboutPlayerScale == true)
             {
                 //コライダーを大きくする
                 sphereCollider.radius = sphereCollider.radius + addColliderRadius;

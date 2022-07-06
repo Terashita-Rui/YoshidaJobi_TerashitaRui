@@ -16251,8 +16251,9 @@ GameObject:
   - component: {fileID: 883923209}
   - component: {fileID: 883923208}
   - component: {fileID: 883923213}
+  - component: {fileID: 883923214}
   m_Layer: 9
-  m_Name: PlayerDiameter
+  m_Name: PlayerScale
   m_TagString: PlayerDiameter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16357,11 +16358,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 883923207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 149a0b4ae6daadd4b8d20fd1344e8586, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a30c32bcc5c6224a8e50b39c7750d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addExpansionSpeed: 0.4
+  addExpansionSpeed: 0.07
   moveCenter: 0.7
+--- !u!114 &883923214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883923207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccbe430596e5a04fb4a9de1588ac9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &885958633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5678574465833377024, guid: 118d7d8ffd6e7c246bf3b4a468bb2600,

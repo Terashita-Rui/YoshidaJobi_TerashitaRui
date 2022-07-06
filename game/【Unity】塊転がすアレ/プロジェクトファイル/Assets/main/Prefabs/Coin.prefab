@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4359507684281442510}
   - component: {fileID: 4359507684281442505}
   - component: {fileID: -2987564994305400372}
+  - component: {fileID: 6393019530972456711}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Item
@@ -143,3 +144,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &6393019530972456711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4359507684281442504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccbe430596e5a04fb4a9de1588ac9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -47,10 +47,10 @@ public class GameManager : MonoBehaviour
     private GameObject playerObj;
     //PlayerScript入れる
     private Player playerScript;
-    //PlayerDiameterオブジェクト
-    private GameObject playerDiameterObj;
+    //PlayerScaleオブジェクト
+    private GameObject playerScaleObj;
     //PlayerDiameterスクリプト
-    private PlayerDiameter playerDiameterScript;
+    private PlayerScale playerScaleScript;
 
     //カウントダウンが終了したか
     [System.NonSerialized]
@@ -62,13 +62,13 @@ public class GameManager : MonoBehaviour
     //ItemがPlayerにくっついたときの音
     public AudioClip stackSE;
 
-    //今回のプレイ時の最後の直径
-    public static float nowPlayDiameter;
-    //playerDiameterScript.currentDimeterをmに変換していれる
+    //今回のプレイ時の最後の大きさ
+    public static float nowPlayScale;
+    //playerScaleScript.currentScaleをmに変換していれる
     public static float scale_m;
-    //playerDiameterScript.currentDimeterをcmに変換して入れる
+    //playerScaleScript.currentScaleをcmに変換して入れる
     public static float scale_cm;
-    //playerDiameterScript.currentDimeterをmmに変換して入れる
+    //playerScaleScript.currentScaleをmmに変換して入れる
     public static float scale_mm;
     //ゲームが終了したか
     public static bool IsGameEnd;
@@ -80,8 +80,8 @@ public class GameManager : MonoBehaviour
         audioSource = this.transform.GetComponent<AudioSource>();
         playerObj = GameObject.Find("Player");
         playerScript = playerObj.GetComponent<Player>();
-        playerDiameterObj = GameObject.Find("PlayerDiameter");
-        playerDiameterScript = playerDiameterObj.GetComponent<PlayerDiameter>();
+        playerScaleObj = GameObject.Find("PlayerScale");
+        playerScaleScript = playerScaleObj.GetComponent<PlayerScale>();
 
         IsGameEnd = false;
 
@@ -97,11 +97,11 @@ public class GameManager : MonoBehaviour
     {
         //各数値がfloatでその都合上たまにマイナスになってしまうから絶対値にしてごまかす(本当はよくない)
         //mに変換
-        scale_m = Mathf.Floor(Mathf.Abs(playerDiameterScript.currentDimeter));
+        scale_m = Mathf.Floor(Mathf.Abs(playerScaleScript.currentScale));
         //cmに変換
-        scale_cm = Mathf.Floor(Mathf.Abs(playerDiameterScript.currentDimeter * 100 % 100));
+        scale_cm = Mathf.Floor(Mathf.Abs(playerScaleScript.currentScale * 100 % 100));
         //mmに変換
-        scale_mm = Mathf.Floor(Mathf.Abs((playerDiameterScript.currentDimeter * 1000 - (scale_m * 1000 + scale_cm * 10))));
+        scale_mm = Mathf.Floor(Mathf.Abs((playerScaleScript.currentScale * 1000 - (scale_m * 1000 + scale_cm * 10))));
 
         //playerScaleを各単位に変換したものを表示に反映＋その単位を表示
         playerScaleUI.text = scale_m.ToString("0") + "m" + scale_cm.ToString("0") + "cm" + scale_mm.ToString("0") + "mm";
@@ -161,8 +161,8 @@ public class GameManager : MonoBehaviour
                 gameTimeLimit = 0.0f;
                 audioSource.Stop();
 
-                //ゲーム終了時の直径を入れる
-                nowPlayDiameter = playerDiameterScript.currentDimeter;
+                //ゲーム終了時の大きさを入れる
+                nowPlayScale = playerScaleScript.currentScale;
 
                 IsTimeUp = true;
                 timeUPUI.SetActive(true);

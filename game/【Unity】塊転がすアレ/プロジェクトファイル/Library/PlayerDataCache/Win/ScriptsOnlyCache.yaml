@@ -1,13 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ColliderVisualizer
     - CreateGameFloor
     - GameManager
     - Item
     - Move
     - MyCamera
     - Player
-    - PlayerDiameter
+    - PlayerScale
     - Ranking
     - ResultCamera
     - ResultManager
@@ -82,6 +83,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11248}
     - Class: 114
+      Script: {instanceID: 11260}
+    - Class: 114
       Script: {instanceID: 11352}
     - Class: 114
       Script: {instanceID: 11416}
@@ -100,8 +103,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12464}
-    - Class: 114
       Script: {instanceID: 12716}
     - Class: 114
       Script: {instanceID: 12764}
@@ -109,6 +110,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13008}
     - Class: 114
       Script: {instanceID: 13068}
+    - Class: 114
+      Script: {instanceID: 16122}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -600,12 +603,6 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: ad23aabc979b1828612374c5f1a61530
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerDiameter
-  - hash:
-      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -778,9 +775,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ad23aabc979b1828612374c5f1a61530
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerScale
   platform: 5
   scenePathNames:
   - Assets/main/Scenes/Title.unity
   - Assets/main/Scenes/Game.unity
   - Assets/main/Scenes/Result.unity
-  playerPath: "C:/Users/student/Desktop/GitHub/\u5409\u7530\u5B66\u5712\u60C5\u5831\u30D3\u30B8\u30CD\u30B9\u5C02\u9580\u5B66\u6821_\u5BFA\u4E0B\u7409\u751F/\u3010Unity\u3011\u584A\u8EE2\u304C\u3059\u30A2\u30EC/\u584A\u8EE2\u304C\u3059\u30A2\u30EC.exe"
+  playerPath: "C:/Users/student/Desktop/GitHub/\u5409\u7530\u5B66\u5712\u60C5\u5831\u30D3\u30B8\u30CD\u30B9\u5C02\u9580\u5B66\u6821_\u5BFA\u4E0B\u7409\u751F/\u584A\u8EE2\u304C\u3059\u30A2\u30EC\u30C7\u30D0\u30C3\u30B0/\u584A\u8EE2\u304C\u3059\u30A2\u30EC.exe"

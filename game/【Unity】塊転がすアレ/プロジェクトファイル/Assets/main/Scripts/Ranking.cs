@@ -31,7 +31,7 @@ public class Ranking : MonoBehaviour
         if (IsEndUpdataRanking == false)
         {
             //ランキングが10位まで表示なので、ランキングで使わない配列の11個目に今回の大きさ(スコア)を入れる
-            SaveSystem.Instance.UserData.highScore[SaveSystem.Instance.UserData.highScore.Length - 1] = GameManager.nowPlayDiameter;
+            SaveSystem.Instance.UserData.highScore[SaveSystem.Instance.UserData.highScore.Length - 1] = GameManager.nowPlayScale;
 
             //今回のスコア＋保存してあるスコアでバブルソートする
             BubbleSort(SaveSystem.Instance.UserData.highScore);

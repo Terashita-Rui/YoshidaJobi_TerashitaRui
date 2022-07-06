@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3882316308426672562}
   - component: {fileID: 3687190853517301366}
   - component: {fileID: 2462763292197963447}
+  - component: {fileID: 532932404528796450}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Item
@@ -143,3 +144,15 @@ MonoBehaviour:
   IsRotateY: 1
   IsRotateZ: 0
   rotateSpeed: 0.5
+--- !u!114 &532932404528796450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882316308426672565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccbe430596e5a04fb4a9de1588ac9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
